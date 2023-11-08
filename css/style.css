@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#quiz{
+    margin-top: 5%;
+}
+button{
+    display: block;
+    width: 300px;
+    padding: 20px;
+}
+
+.resposta{
+    margin: auto auto;
+    margin-bottom: 1%;
+    border: none;
+    cursor: pointer;
+}
+.resposta:hover{
+    background: yellow;
+}
+.resposta.selecionada{
+    background: rgb(156, 219, 255);
+}
+#confirm{
+    margin: auto auto;
+    background: rgb(1, 120, 1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+#confirm:hover{
+    background-color: green;
+}
+.errada{
+    background: red;
+    color: #fff;
+}
+.correta{
+    background: green;
+    color: #fff;
+    animation: piscando 0.5s infinite;
+}
+@keyframes piscando{
+    0%,49%{
+        background: green;
+    }
+    50%,100%{
+        background: seagreen;
+    }
+}
+#status{
+    padding: 10%;
+}
+
+#novojogo{
+    background: black;
+    color: #fff;
+    margin: auto auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
